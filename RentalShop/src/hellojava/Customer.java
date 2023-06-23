@@ -20,10 +20,7 @@ public class Customer {
 	}
 
 	public String statement() {
-		int totalAmount = calcTotalAmount();
-		int bonusPoints = calcBounsPoints();
-		String rentalList = calcRentalList(totalAmount, bonusPoints);
-		return rentalList;
+		return calcRentalList(calcTotalAmount(), calcBounsPoints());
 	}
 	private int calcTotalAmount() {
 		int totalAmount = 0;

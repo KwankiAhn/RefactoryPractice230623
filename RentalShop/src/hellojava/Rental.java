@@ -34,9 +34,6 @@ public class Rental {
 	}
 
 	public int calcLineAmount() {
-		int lineAmount = 0;
-		lineAmount = movieType.getLineAmount(daysRented);
-
-		return lineAmount;
+		return movieType.getLineAmount(daysRented);
 	}
 }
